@@ -11,7 +11,7 @@ public class camera extends BaseCamera{
 		
 		AndroidDriver<AndroidElement> driver = Capabilities();
 	
-		driver.findElementByAndroidUIAutomator("text(\"TAKE PICTURE\")").click();
+		 driver.findElementByAndroidUIAutomator("text(\"TAKE PICTURE\")").click();
 		driver.findElementByAndroidUIAutomator("text(\"ALLOW\")").click();
 		//driver.findElementByAndroidUIAutomator("text(\"ALLOW\")").click();
 		
