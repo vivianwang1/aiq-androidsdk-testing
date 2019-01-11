@@ -11,7 +11,7 @@ public class camera extends BaseCamera{
 		
 		AndroidDriver<AndroidElement> driver = Capabilities();
 	
-		 driver.findElementByAndroidUIAutomator("text(\"TAKE PICTURE\")").click();
+		driver.findElementByAndroidUIAutomator("text(\"TAKE PICTURE\")").click();
 		driver.findElementByAndroidUIAutomator("text(\"ALLOW\")").click();
 		//driver.findElementByAndroidUIAutomator("text(\"ALLOW\")").click();
 		
@@ -45,7 +45,7 @@ public class camera extends BaseCamera{
 		driver.findElementById("com.android.camera2:id/cancel_button").click();
 		
 		//compare Text
-		//System.out.print((driver.findElementByAndroidUIAutomator("text(\"Search an image from camera capture.\")").getAttribute("text").equals("Search an image from camera capture.")));
+		System.out.print((driver.findElementByAndroidUIAutomator("text(\"Search an image from camera capture.\")").getAttribute("text").equals("Search an image from camera capture.")));
 		
 	}
 
