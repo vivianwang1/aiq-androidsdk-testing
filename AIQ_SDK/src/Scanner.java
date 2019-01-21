@@ -14,7 +14,7 @@ public class Scanner extends BaseScanner{
 		
 		AndroidDriver<AndroidElement> driver = Capabilities();
 		
-		//test
+		//test vivian wang tong
 		
 		//1)xpath syntax: tagname[@atrribute='value']
 		//2)            or  tagname[2]

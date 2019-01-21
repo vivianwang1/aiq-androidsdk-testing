@@ -17,7 +17,7 @@ public class BaseScanner {
 		File fs = new File(f, "scanner-release.apk"); 
 		
 		DesiredCapabilities cap = new DesiredCapabilities();
-		cap.setCapability(MobileCapabilityType.DEVICE_NAME, "VivianTestingDevice1");
+		cap.setCapability(MobileCapabilityType.DEVICE_NAME, "VivianTestingDevice1");   
 		cap.setCapability(MobileCapabilityType.APP,fs.getAbsolutePath());
 		cap.setCapability("automationName", "uiautomator2");
 	
@@ -25,5 +25,4 @@ public class BaseScanner {
 		AndroidDriver<AndroidElement> driver = new AndroidDriver <AndroidElement> (new URL("http://127.0.0.1:4723/wd/hub"),cap); 
 		return driver;
 	}
-
 }
